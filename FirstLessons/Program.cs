@@ -78,21 +78,16 @@
 //Задача 8: Напишите программу, которая на вход принимает число (N), 
 //а на выходе показывает все чётные числа от 1 до N.
 
-// Console.Write("Введите любое положительное число N: ");
-// int num = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите любое положительное число N: ");
+int num = Convert.ToInt32(Console.ReadLine());
 
-// int current = 1;
+int current = 1;
 
-// while(current <= num)
-// {
-//   if (current % 2 == 0)
-//   {
-//     Console.Write(current + " ");
-//     current ++;
-//   }
-//   else
-//   {
-//     current++;
-//   }
-  
-// }
+while(current <= num)
+{
+  if (current % 2 == 0)
+  {
+    Console.Write(current + " ");
+  }
+current ++;
+}
