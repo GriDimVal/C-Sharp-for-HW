@@ -19,25 +19,39 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-// int randNumber1= new Random().Next(0, 10000);
-// Console.WriteLine("Случайное число - " + randNumber1);
+int CutThirdNumber (int num)
+{
+  while (num > 999)
+  {
+  num /= 10;
+  }
+return num % 10;
+}
 
-// int chooisNumber (int num1)
+int Print(string message)
+{
+  Console.Write(message);
+  string value = "";
+  value = Console.ReadLine();
+  int result = Convert.ToInt32(value);
+  return result;
+}
 
-// {
-//   int third = num1 % 100;
+bool NotThird (int num)
+{
+  if (num < 100)
+  {
+    Console.WriteLine("Третьей цифры нет");
+    return false;
+  }
+  return true;
+}
 
-//   if (third <= 0)
-//   Console.Write($"третьего числа в {randNumber1} нет");
-//   if (third > 1 && third <10)
-//     {
-//       int first = num1;
-//       Console.Write($"третье число в {randNumber1} = {first}");
-//       break
-//     }
-// }
-
-
+int num = Print("введите число - ");
+  if (NotThird(num))
+{
+  Console.WriteLine(CutThirdNumber(num));
+}
 
 
 // Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
@@ -45,20 +59,20 @@
 // 7 -> да
 // 1 -> нет
 
-int WeekDayRandom = new Random().Next(1,8);
+// int WeekDayRandom = new Random().Next(1,8);
 
-Console.WriteLine($"Сегодня {WeekDayRandom} по счету день");
+// Console.WriteLine($"Сегодня {WeekDayRandom} по счету день");
 
-if (WeekDayRandom == 6)
-  {
-    Console.WriteLine("сегодня суббота");
-  }
-  if (WeekDayRandom == 7)
-  {
-  Console.WriteLine("сегодня воскресенье");
-  }
-else
-    Console.WriteLine("сегодня будний день");
+// if (WeekDayRandom == 6)
+//   {
+//     Console.WriteLine("сегодня суббота");
+//   }
+//   if (WeekDayRandom == 7)
+//   {
+//   Console.WriteLine("сегодня воскресенье");
+//   }
+// else
+//     Console.WriteLine("сегодня будний день");
   
 
 
