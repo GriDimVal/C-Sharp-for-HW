@@ -1,5 +1,13 @@
 ﻿//Задача 47. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
 
+const int row = 0;
+const int column = 0;
+const int minValue = 0;
+const int maxValue = 0;
+
+
+
+
 int[] Prompt()
 {
     int[] array = new int[4];
